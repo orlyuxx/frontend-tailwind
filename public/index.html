@@ -22,8 +22,10 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
     ></script>
-    <script src="./assets/js/charts-lines.js" defer></script>
-    <script src="./assets/js/charts-pie.js" defer></script>
+    <!-- <script src="./assets/js/charts-lines.js" defer></script> -->
+    <!-- <script src="./assets/js/charts-pie.js" defer></script>    -->
+    <script src="./assets/js/dashboard/dashboard.js" type="module" defer></script>
+
   </head>
   <body>
     <div
@@ -41,6 +43,8 @@
           >
             Kickz
           </a>
+          <a href="#" id="btn_logout" class="font-bold ml-6">Logout</a>
+
           <ul class="mt-6">
             <li class="relative px-6 py-3">
               <span
@@ -802,11 +806,11 @@
                       </a>
                     </li>
                     <li class="flex">
-                      <a
+                      <a id="btn_logout"
                         class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-                        href="#"
+                        href="#" 
                       >
-                        <svg
+                        <!-- <svg
                           class="w-4 h-4 mr-3"
                           aria-hidden="true"
                           fill="none"
@@ -817,10 +821,10 @@
                           stroke="currentColor"
                         >
                           <path
-                            d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                            d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3 H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
                           ></path>
-                        </svg>
-                        <span>Log out</span>
+                        </svg> -->
+                        Logout
                       </a>
                     </li>
                   </ul>
@@ -920,7 +924,7 @@
                 </div>
               </div>
               <!-- Card -->
-              <div
+              <!-- <div
                 class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
               >
                 <div
@@ -946,11 +950,11 @@
                     35
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <!-- New Table -->
-            <div class="w-full overflow-hidden rounded-lg shadow-xs">
+            <!-- <div class="w-full overflow-hidden rounded-lg shadow-xs">
               <div class="w-full overflow-x-auto">
                 <table class="w-full whitespace-no-wrap">
                   <thead>
@@ -969,7 +973,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1010,7 +1014,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1051,7 +1055,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1092,7 +1096,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1133,7 +1137,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1174,7 +1178,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1215,7 +1219,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1256,7 +1260,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1297,7 +1301,7 @@
                     <tr class="text-gray-700 dark:text-gray-400">
                       <td class="px-4 py-3">
                         <div class="flex items-center text-sm">
-                          <!-- Avatar with inset shadow -->
+                          Avatar with inset shadow
                           <div
                             class="relative hidden w-8 h-8 mr-3 rounded-full md:block"
                           >
@@ -1344,7 +1348,7 @@
                   Showing 21-30 of 100
                 </span>
                 <span class="col-span-2"></span>
-                <!-- Pagination -->
+                Pagination
                 <span class="flex col-span-4 mt-2 sm:mt-auto sm:justify-end">
                   <nav aria-label="Table navigation">
                     <ul class="inline-flex items-center">
@@ -1433,7 +1437,7 @@
                   </nav>
                 </span>
               </div>
-            </div>
+            </div> -->
 
             <!-- Charts --> 
             <h2

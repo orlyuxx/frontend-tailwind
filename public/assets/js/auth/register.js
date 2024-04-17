@@ -1,7 +1,6 @@
-import { url, successNotification, errorNotification } from "../utils/utils.js";
+import { backendURL, successNotification, errorNotification } from "../utils/utils.js";
 
 // Form Register
-
 
 const form_register = document.getElementById("form_register");
 
@@ -23,7 +22,7 @@ form_register.onsubmit = async (e) => {
     formData.append("role", "User");
 
     // Fetch API User Register Endpoint
-    const response = await fetch(url + "/api/user", {
+    const response = await fetch(backendURL + "/api/user", {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -33,15 +32,11 @@ form_register.onsubmit = async (e) => {
 
     // Get response if 200-299 status code
     if (response.ok) {
-        const json = await response.json();
-        console.log(json);  
-
-        document.querySelector(".alert-success").classList.remove('hidden');
-        document.querySelector(".alert-success").classList.add('block');
-
         form_register.reset();
 
         successNotification("Successfully created an account!", 5);
+
+        window.location.pathname = "/public/pages/login.html";
     }
     // Get response if 422 status code
     else if (response.status == 422) {
