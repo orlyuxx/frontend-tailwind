@@ -23,7 +23,7 @@ form_register.onsubmit = async (e) => {
 
     // Fetch API User Register Endpoint
     const response = await fetch(backendURL + "/api/user", {
-        method: "POST",
+        method: "GET",
         headers: {
             Accept: "application/json",
         },
